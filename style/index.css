@@ -1,0 +1,101 @@
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header{
+  background-image: url("../img/galaxy-night-landscape.jpg");
+  display: flex;
+  justify-content: space-between;
+}
+.header span{
+  width: 80px;
+  padding: 10px;
+}
+.header h1{
+  width: 88%;
+  text-align: center;
+  padding: 16px 10px;
+  padding-right: 50px;
+}
+
+.stars {
+  text-align: center;
+  color: brown;
+}
+
+.starslogo {
+  /* align-content: flex-start; */
+  border-radius: 20px;
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+li:hover {
+  background-color: brown;
+}
+.hide {
+  display: none;
+}
+
+.sec1 {
+  background-image: url('../img/star1.jpg');
+  /* background-size: cover; */
+  background-size: 100% 100vh; 
+  background-attachment: fixed;
+}
+.sec1 ul{
+  width: 80%;
+  margin: 0 auto;
+  /* background: none; */
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sec1 ul li{
+  flex: 0 0 320px;
+  text-align: center;
+  margin: 30px 0;
+  padding: 10px 8px;
+
+}
+
+.sec2 {
+  background-image: url('../img/new.jpg');
+  background-repeat: no-repeat;
+  height: 90vh;
+  background-size: 100% 100vh;
+  color: white;
+  text-align: center;
+}
+
+button {
+  padding-left: 30px;
+  padding-right: 30px ;
+  
+}
+
+h2 {
+  margin: 10px;
+}
+
+p {
+  margin: 10px;
+}
+
+@media  (max-width: 576px){
+  .header{
+    flex-direction: column;
+  }
+  .header span{
+    width: 100%;
+    text-align: center;
+  }
+  
+}
